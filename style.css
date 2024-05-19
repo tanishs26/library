@@ -1,0 +1,75 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.popup {
+  width: 40vh;
+  height: 50vh;
+  background-color: rgb(255, 204, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(200, 198, 198);
+}
+.book-card {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.inp1 > input {
+  height: 2rem;
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.checkbox {
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+}
+#addNew {
+  width: 20vh;
+  padding: 10px 10px;
+  background-color: gold;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.popup > button {
+  width: 20vh;
+  padding: 10px 10px;
+  background-color: rgb(91, 113, 255);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.popup > button:hover {
+  scale: 1.1;
+  box-shadow: 1px 1px 2px rgb(86, 86, 86);
+}
+.bookInfo {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 10px;
+  gap: 40px;
+}
