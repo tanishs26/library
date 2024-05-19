@@ -41,6 +41,8 @@ function displayBook() {
 
     const bookTitle = document.createElement("div");
     bookTitle.textContent = myLibrary[i].title;
+    bookTitle.style.fontWeight='600';
+    bookTitle.style.textAlign='center'
 
     const bookAuthor = document.createElement("div");
     bookAuthor.textContent = `Author: ${myLibrary[i].author}`;
