@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif;
+  font-family: Montserrat,sans-serif;
 }
 body {
   display: flex;
@@ -75,7 +75,7 @@ body {
 }
 .bookInfo {
   display: grid;
-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 10px;
   gap: 40px;
 }

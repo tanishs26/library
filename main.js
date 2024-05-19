@@ -35,7 +35,7 @@ submit.addEventListener("click", () => {
 
 function displayBook() {
   bookInfo.innerHTML='';
-  for (let i = 0; i < myLibrary.length; i++) {
+  for (let i = myLibrary.length-1; i>=0; i--) {
     const bookDiv = document.createElement("div");
     bookDiv.classList.add('book-div')
 
