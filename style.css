@@ -7,6 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: crimson;
 }
 
 .popup {
@@ -47,10 +48,15 @@ body {
   padding: 10px 10px;
   background-color: gold;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   color: white;
   font-size: 1rem;
   box-sizing: border-box;
+}
+#addNew:hover {
+  scale: 1.1;
+  transition: ease-in-out;
 }
 .popup > button {
   width: 20vh;
@@ -72,4 +78,26 @@ body {
   /* flex-direction: column; */
   margin: 10px;
   gap: 40px;
+}
+.delete-button,
+.read-button {
+  background-color: gold;
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.delete-button:hover,
+.read-button:hover {
+  scale: 1.1;
+  transition: ease-in-out;
+}
+
+.book-div {
+  background-color: rgb(233, 227, 227);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
