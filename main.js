@@ -34,15 +34,15 @@ submit.addEventListener("click", () => {
 });
 
 function displayBook() {
-  bookInfo.innerHTML='';
-  for (let i = myLibrary.length-1; i>=0; i--) {
+  bookInfo.innerHTML = "";
+  for (let i = myLibrary.length - 1; i >= 0; i--) {
     const bookDiv = document.createElement("div");
-    bookDiv.classList.add('book-div')
+    bookDiv.classList.add("book-div");
 
     const bookTitle = document.createElement("div");
     bookTitle.textContent = myLibrary[i].title;
-    bookTitle.style.fontWeight='600';
-    bookTitle.style.textAlign='center'
+    bookTitle.style.fontWeight = "600";
+    bookTitle.style.textAlign = "center";
 
     const bookAuthor = document.createElement("div");
     bookAuthor.textContent = `Author: ${myLibrary[i].author}`;
@@ -51,10 +51,10 @@ function displayBook() {
     bookPage.textContent = `Page: ${myLibrary[i].pages}`;
 
     const bookRead = document.createElement("button");
-    bookRead.classList.add('read-button')
-    bookRead.textContent=`${myLibrary[i].read}`
+    bookRead.classList.add("read-button");
+    bookRead.textContent = `${myLibrary[i].read}`;
     bookRead.addEventListener("click", () => {
-      myLibrary[i].read =  myLibrary[i].read == "Read" ? "Not Read" : "Read";
+      myLibrary[i].read = myLibrary[i].read == "Read" ? "Not Read" : "Read";
       displayBook();
     });
 
@@ -63,8 +63,8 @@ function displayBook() {
     bookDel.classList.add("delete-button");
 
     bookDel.addEventListener("click", () => {
-       myLibrary.splice(i,1);
-       displayBook();
+      myLibrary.splice(i, 1);
+      displayBook();
     });
 
     bookDiv.appendChild(bookTitle);
