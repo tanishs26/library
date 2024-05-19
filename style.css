@@ -74,8 +74,8 @@ body {
   box-shadow: 1px 1px 2px rgb(86, 86, 86);
 }
 .bookInfo {
-  display: flex;
-  /* flex-direction: column; */
+  display: grid;
+grid-template-columns: 1fr 1fr;
   margin: 10px;
   gap: 40px;
 }
